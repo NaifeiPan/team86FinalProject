@@ -11,9 +11,9 @@ public class CrimeData {
 	private String locationDescription; // NOTE: This will be a good field to ask questions about
 	private boolean resultsInArrest;
 	private boolean domesticDispute;
-	private int communityCode;
-	private int xCoordinate;
-	private int yCoordinate;
+	private double communityCode;
+	private double xCoordinate;
+	private double yCoordinate;
 	private int year;
 	private String lastUpdate;
 	private double latitude;
@@ -22,8 +22,8 @@ public class CrimeData {
 
 	public CrimeData(int passedID, String passedcaseNumber, String passeddateTimeOfIncident, String passedblockAddresss,
 			String passedcrimeType, String passedcrimeSubType, String passedlocationDescription,
-			boolean passedresultsInArrest, boolean passeddomesticDispute, int passedcommunityCode,
-			int passedxCoordinate, int passedyCoordinate, int passedyear, String passedlastUpdate,
+			boolean passedresultsInArrest, boolean passeddomesticDispute, double passedcommunityCode,
+			double passedxCoordinate, double passedyCoordinate, int passedyear, String passedlastUpdate,
 			double passedlatitude, double passedlongitude, String passedlatLongLocation) {
 		ID = passedID;
 		caseNumber = passedcaseNumber;
@@ -81,15 +81,15 @@ public class CrimeData {
 		return domesticDispute;
 	}
 
-	public int getcommunityCode() {
+	public double getcommunityCode() {
 		return communityCode;
 	}
 
-	public int getxCoordinate() {
+	public double getxCoordinate() {
 		return xCoordinate;
 	}
 
-	public int getyCoordinate() {
+	public double getyCoordinate() {
 		return yCoordinate;
 	}
 
